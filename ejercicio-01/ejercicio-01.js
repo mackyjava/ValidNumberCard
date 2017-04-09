@@ -2,11 +2,17 @@ function isValidCard(creditCardNumber) {
     // Escribe tu código aquí
     switch(typeof(creditCardNumber)){
 		case "undefined":
-		return "Ingresa un numero";
+			return "Ingresa un numero";
 		break;
-	    case "!= number"
-        return "Error de dato";
-		break;	
+		case "string":
+        	return "Error de dato";
+		break;
+		case "array":
+			return "Error de dato";
+		break;
+	    case "boolean":
+			return "Error de dato";
+		break;
 	 }
   
 }
