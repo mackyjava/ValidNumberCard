@@ -17,11 +17,12 @@ function isValidCard(creditCardNumber) {
 		 if(long< 16){
 			 
 		 return "Faltan numeros";
-		 }else {
-			 return
-				 validCard();
-		 }
-	}                     
+		 
+		
+		 }return validCard(creditCardNumber);
+	}    
+	
+	
 }
      
 function validCard (creditCardNumber) {
@@ -37,10 +38,10 @@ function validCard (creditCardNumber) {
 		return false;
 	}
 }
-//Funciones auxiliares
+
 function oddNumbers(creditCardNumber){
-	const numbers = creditCardNumber;
-	const numToString = numbers.toString();
+	const numToString = creditCardNumber.toString();
+	
 	const arrayNumbers = numToString.split('');
 	const oddNums = arrayNumbers.filter(function(item,i){
 	return (i+1)%2!==0;});
